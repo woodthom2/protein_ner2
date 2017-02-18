@@ -1,0 +1,2 @@
+cd $MODELS_DIR/syntaxnet
+bazel-bin/syntaxnet/parser_trainer --task_context=syntaxnet/context_protein.pbtxt   --arg_prefix=brain_pos   --compute_lexicon   --graph_builder=greedy   --training_corpus=training-corpus   --tuning_corpus=tuning-corpus   --output_path=$RNN_HOME/train  --batch_size=32  --decay_steps=3600   --hidden_layer_sizes=128   --learning_rate=0.08   --momentum=0.9   --seed=0   --params=128-0.08-3600-0.9-0 --checkpoint_every=100
