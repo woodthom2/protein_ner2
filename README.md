@@ -38,7 +38,7 @@ git clone --recursive https://github.com/tensorflow/models.git
 * mkdir $RNN_HOME/data
 * mkdir $RNN_HOME/train 
 * mkdir $RNN_HOME/output 
-* In folder rnn, execute Preprocess.ipynb. This will prepare the training data for a format that it can be used to train the RNN. It will also split off 10% as a validation set.
+* In folder rnn, execute the two Preprocess_*.ipynb notebooks. This will prepare the training and test data for a format that it can be used to train the RNN. It will also split off 10% from the training set as a validation set.
 * Replace the absolute paths in context_protein.pbtxt with the appropriate ones for your system (pointing to $RNN_HOME).
 * Copy context_protein.pbtxt to $MODELS_DIR/syntaxnet/syntaxnet/context_protein.pbtxt. (please note due to time constraints I have misused the slots for the 3 corpora in this context file: train=train, tuning=validation but dev=test)
 * Execute tw_train_protein.sh
