@@ -1,0 +1,3 @@
+model_checkpoint_path: "/media/thomas/5849-28A2/rnndir_3//train/brain_pos/greedy/128-0.08-3600-0.9-0/latest-model"
+all_model_checkpoint_paths: "/media/thomas/5849-28A2/rnndir_3//train/brain_pos/greedy/128-0.08-3600-0.9-0/model"
+all_model_checkpoint_paths: "/media/thomas/5849-28A2/rnndir_3//train/brain_pos/greedy/128-0.08-3600-0.9-0/latest-model"
