@@ -47,3 +47,17 @@ git clone --recursive https://github.com/tensorflow/models.git
 * To execute the trained model on the training data, execute tw_run_protein_training_set.sh. The output will be saved to $RNN_DIR/train/brain_pos/greedy/128-0.08-3600-0.9-0/tagged-training-corpus.
 * Likewise run the other sh files to run it on the validation or test set.
 * Run GenerateOutputFile.ipynb to produce the final result for assessment. It will write a table showing the entities in the unseen test text to the output folder.
+* To validate the model on the 10% of the training set, run RunValidation.ipynb
+* To 
+
+
+# Notes on the code
+
+There are a lot of ways I would have preferred to refactor this code but I was unable to do so due to limited time.
+
+1. Use a submodule for the TensorFlow Models dependencies
+2. Link the Python code together properly instead of using shell scripts, Ipython Notebooks and environment variables
+3. Clean up the preprocessing code so it's more unified, as logic is duplicated
+4. On my system (Ubuntu) the character indices of the training corpus didn't align correctly with the text - they were often off by one to the left and right so I had to code a little hack to identify these cases and shift my indices accordingly. I think this is because of either encoding issues or line breaks (Windows vs Linux) so I would clean this up and do it properly.
+5. My tokenisation methods are not very good as I am tokenising text and then throwing away character indices which would have been useful later.
+6. My validation dataset is too easy, as I have split on sentence level and not document level, so it's possible that some sentences from a given document end up in my training set and some end up in my validation set, making the validation task deceptively easy.
