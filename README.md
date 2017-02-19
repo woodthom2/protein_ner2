@@ -13,7 +13,7 @@ I am using Tensorflow deep learning library with the SyntaxNet model which uses 
 * Tensorflow 1.0: you can install via Anaconda or from source.
 * Tensorflow Models: Clone https://github.com/tensorflow/models.git locally on your computer
 * python -m pip install asciitree
-* (for training) a GPU e.g. NVIDIA 1080
+* (for training) a GPU e.g. NVIDIA 1080 but this is not essential, you can easily run TensorFlow on CPU
 
 # Getting started
 
