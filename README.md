@@ -56,7 +56,7 @@ git clone --recursive https://github.com/tensorflow/models.git
 
 # Running my trained model
 
-If you want to run the model that I trained earlier, set RNN_HOME to point to the folder tw_rnn_home in this repo.
+If you want to run the model that I trained earlier, copy the trained folder from tw_rnn_home into your RNN_HOME folder and run tw_run_protein*.sh as normal. You will need to change all the absolute paths inside $RNN_HOME/train/brain_pos/greedy/128-0.08-3600-0.9-0/context to point to the correct location on your system too.
 
 # Notes on the code
 
