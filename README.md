@@ -52,8 +52,11 @@ git clone --recursive https://github.com/tensorflow/models.git
 * Likewise run the other sh files to run it on the validation or test set.
 * Run GenerateOutputFile.ipynb to produce the final result for assessment. It will write a table showing the entities in the unseen test text to the output folder.
 * To validate the model on the 10% of the training set, run RunValidation.ipynb
-* To 
 
+
+# Running my trained model
+
+If you want to run the model that I trained earlier, set RNN_HOME to point to the folder tw_rnn_home in this repo.
 
 # Notes on the code
 
