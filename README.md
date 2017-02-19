@@ -1,6 +1,10 @@
 # protein_ner
 NER on protein texts
 
+# Important note
+
+When evaluating the output of my Named Entity tagger, please note the character indices produced by the output of this program may not entirely be as expected if you are using a gold standard generated on Windows, I think this is due to encoding issues or Linux/Windows line break differences. This doesn't affect the entities identified.
+
 # Approach
 
 I am using Tensorflow deep learning library with the SyntaxNet model which uses recurrent neural networks (RNNs) with a Long short-term memory (LSTM) architecture.
