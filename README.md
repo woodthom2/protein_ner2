@@ -1,5 +1,7 @@
 # protein_ner
-NER on protein texts
+NER on protein texts.
+
+By Thomas Wood, https://www.fastdatascience.com
 
 # Important note
 
